@@ -1,0 +1,6 @@
+{
+	"files.autoSave": "afterDelay",
+	"editor.fontFamily": "Losevka Light",
+	"editor.insertSpaces": false,
+	"C_Cpp.default.cStandard": "c99"
+}

@@ -1,1 +1,0 @@
-gcc -g -Wall -Wextra -pedantic main.c -o main.out -Iinclude -lpthread -Llib -lSDL2 -lSDL2main

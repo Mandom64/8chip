@@ -1,0 +1,31 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "SDL2",
+            "command": "C:\\MinGW\\bin\\gcc",
+            "args": [
+                "-g",
+                "src\\*.c",
+                "-o",
+                "build\\8chip.exe",
+                "-Ilib/sdl2/include/SDL2",
+                "-Llib/sdl2/lib",
+                "-lmingw32",
+                "-lSDL2main",
+                "-lSDL2",
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
