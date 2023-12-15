@@ -2,19 +2,19 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "type": "shell",
-            "label": "SDL2",
-            "command": "C:\\MinGW\\bin\\gcc",
+            "type": "process",
+            "label": "8CHIP",
+            "command": "C:\\MinGW\\bin\\gcc.exe",
             "args": [
                 "-g",
                 "src\\*.c",
                 "-o",
                 "build\\8chip.exe",
-                "-Ilib/sdl2/include/SDL2",
-                "-Llib/sdl2/lib",
+                "-Iext/sdl2/include/SDL2",
+                "-Lext/sdl2/lib",
                 "-lmingw32",
                 "-lSDL2main",
-                "-lSDL2",
+                "-lSDL2"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
@@ -22,10 +22,7 @@
             "problemMatcher": [
                 "$gcc"
             ],
-            "group": {
-                "kind": "build",
-                "isDefault": true
-            }
-        }
+            "group": "build"
+        },
     ]
 }
